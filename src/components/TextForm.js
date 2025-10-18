@@ -44,23 +44,23 @@ export default function TextForm(props) {
     <>
     <div style={props.style}>
         <div className="textarea" >
-          <h3>Enter anything to analyse:</h3><br/>
-            <textarea labelfor="floatingTextarea" style={{backgroundColor:props.style.backgroundColor==="black"?"grey":"white"}}placeholder="Enter your text here" onChange={handlechange} value={text} id="floatingTextarea" rows='8' cols="150"></textarea>
+          <h3 className="mb-2">Try TextUtils - Word Counter, Character Counter, Remove Extra Spaces..</h3><br/>
+            <textarea labelfor="floatingTextarea" style={{backgroundColor:props.style.backgroundColor==="black"?"#999493":"white"}}placeholder="Enter your text here" onChange={handlechange} value={text} id="floatingTextarea" rows='8' cols="150"></textarea>
         </div>
-        <button type="button" className="btn btn-info mx-2" onClick={()=>{handleupclick();props.createalert("Text coverted to uppercase!!")}}>To upperCase</button>
-        <button type="button" className="btn btn-info mx-2" onClick={()=>{handlelowclick();props.createalert("Text coverted to lowercase!!")}}>To lowerCase</button>
-        <button type="button" className="btn btn-info mx-2" onClick={()=>{handleclearclick();props.createalert("Text cleared!!")}}>clear text</button>
-        <button type="button" className="btn btn-info mx-2" onClick={()=>{handleremoveextraclick();props.createalert("Removed extra spaces!!")}}>Remove extra spaces</button>
-        <button type="button" className="btn btn-info mx-2" onClick={()=>{handlecopy();props.createalert("Text copied to clipboard!!")}}>Copy text</button>
-        <button type="button" className="btn btn-info mx-2" onClick={handlespeakclick} style={{height:"40px" ,width:"40px"}}>
+        <button type="button" disabled={text.length===0} className="btn btn-info mx-2 my-3" onClick={()=>{handleupclick();props.createalert("Text coverted to uppercase!!")}}>To upperCase</button>
+        <button type="button" disabled={text.length===0} className="btn btn-info mx-2 my-3" onClick={()=>{handlelowclick();props.createalert("Text coverted to lowercase!!")}}>To lowerCase</button>
+        <button type="button" disabled={text.length===0} className="btn btn-info mx-2 my-3" onClick={()=>{handleclearclick();props.createalert("Text cleared!!")}}>clear text</button>
+        <button type="button" disabled={text.length===0} className="btn btn-info mx-2 my-3" onClick={()=>{handleremoveextraclick();props.createalert("Removed extra spaces!!")}}>Remove extra spaces</button>
+        <button type="button" disabled={text.length===0} className="btn btn-info mx-2 my-3" onClick={()=>{handlecopy();props.createalert("Text copied to clipboard!!")}}>Copy text</button>
+        <button type="button" disabled={text.length===0} className="btn btn-info mx-2 my-3" onClick={handlespeakclick} style={{height:"40px" ,width:"40px"}}>
         <img src="audioimage.jpg" alt="" style={{height:"100%",width:"100%",objectFit:"contain"}}/></button>
     </div>
     <div className="my-2">
-      <p>WordCount:{text.trim().split(" ").length}</p>
+      <p>WordCount:{text.trim().split(" ").filter((element)=>{return element.length!==0}).length}</p>
       <p>CharacterCount:{text.length}</p>
       <p>Time taken to read(in min):{text.length*0.008}</p>
       <h4><u>Preview</u></h4>
-      <p>{text}</p>
+      <p>{text.length===0?"Nothing to preview":text}</p>
       <h4>Meaning:</h4>
       <p>{props.searchWord} : {props.Meaning}</p>
     </div>

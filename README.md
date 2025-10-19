@@ -30,6 +30,17 @@ https://DhanasriSiramdasu.github.io/textutils
 
 ---
 
+
+<b>Technologies Used</b></br>
+
+ * React.js</br>
+
+ * JavaScript</br> 
+
+ * HTML5 & CSS3</br>
+
+ * Bootstrap</br>
+
 ## Getting Started
 
 These instructions will help you run the project locally.

@@ -47,24 +47,23 @@ Make sure you have **Node.js** and **npm** installed on your system.
 3. Install dependencies:</br>
    "npm install"
 4. Run the app locally:</br>
-   "npm start"
+   "npm start"</br>
    </br>
    <i>Open http://localhost:3000 in your browser. </br>
-   The app will reload automatically when you make changes.</i></br>
-   <b>Build for Production</b></br> </br>
+   The app will reload automatically when you make changes.</i></br></br>
+   <u><b>Build for Production</b></u></br> </br>
    <i>To create a production-ready build of your app:</i> </br>
    "npm run build"</br>
-   The build will be generated in the build/ folder.</br>
+   <i>The build will be generated in the build/ folder.</i></br></br>
    You can deploy this folder to GitHub Pages, Netlify, or any web hosting service. </br>
-   <b>Deployment on GitHub Pages</b></br>
+   <u><b>Deployment on GitHub Pages</b></u></br>
    <b>Install GitHub Pages package (if not already):</b> </br>
    "npm install gh-pages --save-dev"</br></br>
-   Add the following to package.json: </br>"homepage": "https://your-username.github.io/textutils", </br>
+   Add the following to package.json: </br></br>"homepage": "https://your-username.github.io/textutils"
    </br>"scripts": { "predeploy": "npm run build", "deploy": "gh-pages -d build" } </br></br>
    <b>Deploy the app:</b></br>
    "npm run deploy"</br></br>
    Your app will be live at https://your-username.github.io/textutils </br></br>
-   Learn More Create React App </br>Documentation React Official Documentation</br>
-   <b>License</b></br>
+   <b>License</b>
    </br>This project is open-source and free to use.</br></br>
    <b><i>Developed by Dhanasri Siramdasu</i></b>

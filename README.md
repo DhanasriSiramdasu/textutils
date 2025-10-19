@@ -42,4 +42,11 @@ Make sure you have **Node.js** and **npm** installed on your system.
 
 1. **Clone the repository**:
 
-2. Navigate to the project folder: cd textutils 3. Install dependencies: npm install 4. Run the app locally: npm start <i>Open http://localhost:3000 in your browser. The app will reload automatically when you make changes.</i> <b>Build for Production</b> <i>To create a production-ready build of your app:</i> npm run build The build will be generated in the build/ folder. You can deploy this folder to GitHub Pages, Netlify, or any web hosting service. <b>Deployment on GitHub Pages</b> <b>Install GitHub Pages package (if not already):</b> npm install gh-pages --save-dev Add the following to package.json: "homepage": "https://your-username.github.io/textutils", "scripts": { "predeploy": "npm run build", "deploy": "gh-pages -d build" } <b>Deploy the app:</b> npm run deploy Your app will be live at https://your-username.github.io/textutils Learn More Create React App Documentation React Official Documentation <b>License</b> This project is open-source and free to use. <b><i>Developed by Dhanasri Siramdasu</i></b> gimme all this to copy once
+2. Navigate to the project folder:
+   cd textutils
+3. Install dependencies:
+   npm install
+4. Run the app locally:
+   npm start
+   <i>Open http://localhost:3000 in your browser. </br>The app will reload automatically when you make changes.</i></br>
+   <b>Build for Production</b> </br><i>To create a production-ready build of your app:</i> </br>npm run build The build will be generated in the build/ folder.</br> You can deploy this folder to GitHub Pages, Netlify, or any web hosting service. </br><b>Deployment on GitHub Pages</b></br> <b>Install GitHub Pages package (if not already):</b> </br>npm install gh-pages --save-dev</br> Add the following to package.json: </br>"homepage": "https://your-username.github.io/textutils", </br>"scripts": { "predeploy": "npm run build", "deploy": "gh-pages -d build" } </br><b>Deploy the app:</b></br> npm run deploy</br> Your app will be live at https://your-username.github.io/textutils </br>Learn More Create React App </br>Documentation React Official Documentation</br> <b>License</b> </br>This project is open-source and free to use.</br> <b><i>Developed by Dhanasri Siramdasu</i></b>

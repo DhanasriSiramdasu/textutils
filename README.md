@@ -40,8 +40,8 @@ Make sure you have **Node.js** and **npm** installed on your system.
 
 ### Installation
 
-1. **Clone the repository**:
-   "git clone https://github.com/your-username/textutils.git"
+1. **Clone the repository**:</br>
+   "git clone https://github.com/DhanasriSiramdasu/textutils.git"
 
 3. Navigate to the project folder:</br>
    "cd textutils"

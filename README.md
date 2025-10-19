@@ -41,29 +41,30 @@ Make sure you have **Node.js** and **npm** installed on your system.
 ### Installation
 
 1. **Clone the repository**:
+   "git clone https://github.com/your-username/textutils.git"
 
-2. Navigate to the project folder:</br>
+3. Navigate to the project folder:</br>
    "cd textutils"
-3. Install dependencies:</br>
+4. Install dependencies:</br>
    "npm install"
-4. Run the app locally:</br>
+5. Run the app locally:</br>
    "npm start"</br>
    </br>
    <i>Open http://localhost:3000 in your browser. </br>
    The app will reload automatically when you make changes.</i></br></br>
-5. <u><b>Build for Production</b></u></br> </br>
+6. <u><b>Build for Production</b></u></br> </br>
    <i>To create a production-ready build of your app:</i> </br>
    "npm run build"</br>
    <i>The build will be generated in the build/ folder.</i></br></br>
    You can deploy this folder to GitHub Pages, Netlify, or any web hosting service. </br>
-6. <u><b>Deployment on GitHub Pages</b></u></br></br>
+7. <u><b>Deployment on GitHub Pages</b></u></br></br>
    <b>Install GitHub Pages package (if not already):</b> </br>
    "npm install gh-pages --save-dev"</br></br>
    Add the following to package.json: </br></br>-----"homepage": "https://your-username.github.io/textutils"
    </br>-----"scripts": { "predeploy": "npm run build", "deploy": "gh-pages -d build" } </br></br>
-7. <b>Deploy the app:</b></br>
+8. <b>Deploy the app:</b></br>
    "npm run deploy"</br></br>
    Your app will be live at https://your-username.github.io/textutils </br></br>
-8. <b>License</b>
+9. <b>License</b>
    </br>This project is open-source and free to use.</br></br>
    <b><i>Developed by Dhanasri Siramdasu</i></b>

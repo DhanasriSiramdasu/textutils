@@ -37,6 +37,7 @@ export default function TextForm(props) {
     const textdata=document.getElementById("floatingTextarea");
     textdata.select();
     navigator.clipboard.writeText(textdata.value);
+    document.getSelection().removeAllRanges();
   };
 
 
@@ -61,8 +62,6 @@ export default function TextForm(props) {
       <p>Time taken to read(in min):{text.length*0.008}</p>
       <h4><u>Preview</u></h4>
       <p>{text.length===0?"Nothing to preview":text}</p>
-      <h4>Meaning:</h4>
-      <p>{props.searchWord} : {props.Meaning}</p>
     </div>
     </>
   )

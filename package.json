@@ -2,6 +2,7 @@
   "homepage": "https://DhanasriSiramdasu.github.io/textutils",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://api.dictionaryapi.dev",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",

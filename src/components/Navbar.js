@@ -11,7 +11,7 @@ export default function Navbar(props) {
     {/* <nav className="navbar navbar-expand-lg fixed-top" style={{ border: props.bordercolor, backgroundColor: "transparent" }}> */}
     <nav className="navbar navbar-expand-lg fixed-top" style={{border:props.bordercolor , backgroundColor: props.style.backgroundColor}}>
   <div className="container-fluid" >
-    <a className="navbar-brand" href="/" style={props.style}>{props.title}</a>
+    <a className="navbar-brand" href="/" style={props.style} onClick={()=>props.onTabChange('home')}>{props.title}</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
